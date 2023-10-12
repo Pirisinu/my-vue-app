@@ -11,22 +11,21 @@ export default {
   methods:{
     getApi(){
       axios.get(store.apiUrl+this.apiLimit)
-        .then( (card) => {
-          store.arrayCards.push(card.data)
+        .then( (resp) => {
+          store.arrayCards = resp.data.data;
 
         } )
     }
   },
   mounted(){
     this.getApi()
-  console.log(store.apiUrl+this.apiLimit);
-  console.log(store.arrayCards);
+    console.log(store.arrayCards);
   }
 }
 </script>
 
 <template>
-  <div></div>
+  <div v-for="card in arrayCards" :key="card.id">{{ card }}</div>
 </template>
 
 <style lang="scss" scoped>
