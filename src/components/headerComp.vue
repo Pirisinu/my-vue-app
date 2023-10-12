@@ -1,17 +1,17 @@
   
 <script>
 export default {
-  name: 'headerComp'
-
+  name: 'headerComp',
+  props: ['cardPropriety']
 }
 </script>
 
 <template>
   <header>
     <div class="logo-head">
-      <img src="" alt="IMG">
+      <img src="/public/Yu-Gi-Oh!_(Logo).jpg" alt="IMG">
     </div>
-    <h1>Yu-Gi-OH Apis</h1>
+    <h1>Yu-Gi-OH Api</h1>
   </header>
 </template>
 
@@ -27,7 +27,7 @@ header{
   }
   div{
     margin: 0px 10px;
-    width: 170px;
+    width: 150px;
     height: 50px;
     img{
       width: 100%;
