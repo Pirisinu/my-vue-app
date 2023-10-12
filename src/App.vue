@@ -1,8 +1,6 @@
 
 <script>
 
-import axios from 'axios';
-import { store } from './data/store.js';
 import headerComp from './components/headerComp.vue'
 import mainComp from './components/mainComp.vue'
 
@@ -13,7 +11,6 @@ export default {
     headerComp,
     mainComp
   }
-
 }
 </script>
 
