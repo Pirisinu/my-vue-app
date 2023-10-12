@@ -18,9 +18,11 @@ export default {
 <template>
   <main>
     <selectComp />
-    <countComp />
-    <cardsComp />
 
+    <div class="my_container">
+      <countComp />
+      <cardsComp />
+    </div>
 
   </main>
 </template>
@@ -30,5 +32,9 @@ export default {
 
 main{
 background-color: $orange;
+padding: 10px 30px;
+.my_container{
+  background-color: white;
+}
 }
 </style>
