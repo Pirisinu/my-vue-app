@@ -1,15 +1,34 @@
   
 <script>
-export default {
-  name: 'mainComp'
 
+import selectComp from './selectComp.vue';
+import countComp from './countComp.vue';
+import cardsComp from './cardsComp.vue';
+
+export default {
+  name: 'mainComp',
+  components:{
+    selectComp,
+    countComp,
+    cardsComp
+  }
 }
 </script>
 
 <template>
-  <h2>Main</h2>
+  <main>
+    <selectComp />
+    <countComp />
+    <cardsComp />
+
+
+  </main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+@use '../scss/partials/_vars.sass' as *;
 
+main{
+background-color: $orange;
+}
 </style>
