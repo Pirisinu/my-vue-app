@@ -5,6 +5,7 @@ export default {
   name: 'cardsComp',
   data(){
     return{
+      store,
       apiLimit: '?num=20&offset=0'
     }
   },
@@ -25,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <div v-for="card in arrayCards" :key="card.id">{{ card }}</div>
+  <div v-for="card in store.arrayCards" :key="card.id">{{ card }}</div>
 </template>
 
 <style lang="scss" scoped>
