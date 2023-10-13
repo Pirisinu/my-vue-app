@@ -1,27 +1,28 @@
   
 <script>
 
-import selectComp from './selectComp.vue';
-import countComp from './countComp.vue';
-import cardsComp from './cardsComp.vue';
+import SelectComp from './SelectComp.vue';
+import CountComp from './CountComp.vue';
+import CardsComp from './CardsComp.vue';
 
 export default {
-  name: 'mainComp',
+  name: 'MainComp',
   components:{
-    selectComp,
-    countComp,
-    cardsComp
+    SelectComp,
+    CountComp,
+    CardsComp
   }
 }
 </script>
 
 <template>
   <main>
-    <selectComp />
+    <SelectComp />
 
     <div class="my_container">
-      <countComp />
-      <cardsComp />
+      <CountComp />
+
+      <CardsComp />
     </div>
 
   </main>

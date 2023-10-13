@@ -5,7 +5,7 @@ import { store } from '../data/store';
 
 
 export default {
-  name: 'selectComp',
+  name: 'SelectComp',
   data(){
     return{
       store,

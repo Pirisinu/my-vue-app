@@ -1,23 +1,23 @@
 
 <script>
 
-import headerComp from './components/headerComp.vue'
-import mainComp from './components/mainComp.vue'
+import HeaderComp from './components/HeaderComp.vue'
+import MainComp from './components/MainComp.vue'
 
 
 export default {
   name: 'App',
   components: {
-    headerComp,
-    mainComp
+    HeaderComp,
+    MainComp
   }
 }
 </script>
 
 <template>
 
-  <headerComp />
-  <mainComp />
+  <HeaderComp />
+  <MainComp />
   
 </template>
 

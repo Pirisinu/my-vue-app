@@ -1,16 +1,14 @@
 <script>
-import axios from 'axios';
 import { store } from '../data/store.js'
 import SingleCardComp from './SingleCardComp.vue'
 export default {
-  name: 'cardsComp',
+  name: 'CardsComp',
   components:{
     SingleCardComp
   },
   data(){
     return{
-      store,
-      apiLimit: '?num=20&offset=0'
+      store
     }
   }
 }
@@ -22,8 +20,6 @@ export default {
       v-for="card in store.arrayCards"
       :key="card.id"
       :cardPropriety="card"/>
-  
-  
 
   </div>
 </template>

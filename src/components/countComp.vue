@@ -2,7 +2,7 @@
 import { store } from '../data/store';
 
 export default {
-  name: 'countComp',
+  name: 'CountComp',
   data(){
     return{
       store
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <p>Found {{  store.arrayCards.lenght }} Cards</p>
+  <p>Found {{  store.arrayCards.length }} Cards</p>
 </template>
 
 
