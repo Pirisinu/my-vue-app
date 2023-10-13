@@ -1,11 +1,18 @@
 <script>
+import { store } from '../data/store';
+
 export default {
-  name: 'countComp'
+  name: 'countComp',
+  data(){
+    return{
+      store
+    }
+  }
 }
 </script>
 
 <template>
-  <p>Found 20 Cards</p>
+  <p>Found {{  store.arrayCards.lenght }} Cards</p>
 </template>
 
 

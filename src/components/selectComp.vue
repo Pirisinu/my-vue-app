@@ -23,10 +23,9 @@ export default {
   },
   methods:{
     archetypeSelChange(){
-      axios.get(store.apiUrl+ `?archetype=${this.store.archetypeSel}`)
+      axios.get(store.apiUrl+ '?archetype=' + this.store.archetypeSel)
       .then( (res) => {
         const cardSel = res.data.data
-
         this.store.arrayCards = cardSel;
       })
       .catch( (err) => {
