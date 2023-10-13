@@ -23,7 +23,7 @@ export default {
     margin: 0 10px;
     background-color: $orange;
     &:hover{
-      scale: 1.1;
+      scale: 1.05;
     }
     h4,h5{
       text-align: center;

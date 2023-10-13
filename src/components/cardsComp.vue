@@ -12,19 +12,6 @@ export default {
       store,
       apiLimit: '?num=20&offset=0'
     }
-  },
-  methods:{
-    getApi(){
-      axios.get(store.apiUrl+this.apiLimit)
-        .then( (resp) => {
-          store.arrayCards = resp.data.data;
-          
-        } )
-    }
-  },
-  mounted(){
-    this.getApi()
-    console.log(store.arrayCards);
   }
 }
 </script>
